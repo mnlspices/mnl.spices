@@ -5,217 +5,1129 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MNL SPICES – Premium Kerala Spices from the Hills of Idukki</title>
 <meta name="description" content="MNL SPICES: premium green cardamom, black pepper and coffee powder from the hills of Idukki, Kerala. Enquire directly on WhatsApp.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
-:root{color-scheme:dark;--choc:#1b0f09;--choc2:#2a1810;--gold:#D6A52C;--cream:#FFF8E9;--green:#063B25;--muted:#cdbfa8;--line:rgba(214,165,44,.28);
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{
+color-scheme:dark;
+--choc:#1b0f09;
+--choc2:#2a1810;
+--gold:#D6A52C;
+--cream:#FFF8E9;
+--green:#063B25;
+--muted:#cdbfa8;
+--line:rgba(214,165,44,.28);
+box-sizing:border-box;
+padding-top:env(safe-area-inset-top,0px);
+padding-bottom:env(safe-area-inset-bottom,0px)
+}
+
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;background:var(--choc);color:var(--cream);font:16px/1.7 Inter,system-ui,sans-serif;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:rgba(27,15,9,.85)}
-h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.05;margin:0}
-a{color:inherit}:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+body{
+margin:0;
+background:var(--choc);
+color:var(--cream);
+font:16px/1.7 Inter,system-ui,sans-serif;
+overflow-x:hidden
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0 0 auto;
+height:env(safe-area-inset-top,0px);
+z-index:70;
+background:rgba(27,15,9,.85)
+}
+
+h1,h2,h3{
+font-family:"Cormorant Garamond",Georgia,serif;
+font-weight:700;
+line-height:1.05;
+margin:0
+}
+
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .wrap{max-width:1200px;margin:0 auto;padding:0 22px}
-.ico{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:14px 28px;font:600 15px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s}
+
+.ico{
+width:20px;height:20px;flex:none;
+stroke:currentColor;fill:none;
+stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round
+}
+
+.btn{
+display:inline-flex;align-items:center;justify-content:center;
+gap:9px;border:0;border-radius:999px;padding:14px 28px;
+font:600 15px Inter,sans-serif;text-decoration:none;
+cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s
+}
+
 .btn:hover{transform:translateY(-2px)}
-.gold{background:var(--gold);color:#2a1810}.gold:hover{box-shadow:0 10px 28px rgba(214,165,44,.4)}
+.gold{background:var(--gold);color:#2a1810}
+.gold:hover{box-shadow:0 10px 28px rgba(214,165,44,.4)}
 .wa{background:#1fa855;color:#fff}
-.ghost{border:1.5px solid var(--line);background:transparent;color:var(--cream)}.ghost:hover{border-color:var(--gold);color:var(--gold)}
-header{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);z-index:60;transition:background .4s,backdrop-filter .4s}
-header.sm{background:rgba(27,15,9,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:88px;transition:height .4s}header.sm .nav{height:62px}
-.logo{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:26px;letter-spacing:.08em;text-decoration:none}.logo b{color:var(--gold)}
+.ghost{border:1.5px solid var(--line);background:transparent;color:var(--cream)}
+.ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+header{
+position:fixed;left:0;right:0;
+top:env(safe-area-inset-top,0px);
+z-index:60;
+transition:background .4s,backdrop-filter .4s
+}
+
+header.sm{
+background:rgba(27,15,9,.82);
+backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px)
+}
+
+.nav{
+display:flex;align-items:center;justify-content:space-between;
+height:88px;transition:height .4s
+}
+
+header.sm .nav{height:62px}
+
+.logo{
+font-family:"Cormorant Garamond",serif;
+font-weight:700;font-size:26px;
+letter-spacing:.08em;text-decoration:none
+}
+
+.logo b{color:var(--gold)}
 .links{display:flex;gap:30px;align-items:center}
-.links a:not(.btn){text-decoration:none;font-size:14px;letter-spacing:.04em;opacity:.9}.links a:not(.btn):hover{color:var(--gold)}
+.links a:not(.btn){text-decoration:none;font-size:14px;letter-spacing:.04em;opacity:.9}
+.links a:not(.btn):hover{color:var(--gold)}
 .links .btn{padding:10px 20px;font-size:14px}
-.burger{display:none;background:none;border:0;color:inherit;padding:8px;cursor:pointer}.burger .ico{width:28px;height:28px}
-@media(max-width:860px){.burger{display:block}
-.links{position:absolute;left:0;right:0;top:100%;background:rgba(27,15,9,.97);flex-direction:column;align-items:stretch;gap:0;padding:6px 22px 22px;display:none}
-.links.open{display:flex}.links a:not(.btn){padding:15px 0;border-bottom:1px solid var(--line)}.links .btn{margin-top:16px}}
-.hero{position:relative;min-height:100svh;overflow:hidden;display:flex;align-items:center;background:linear-gradient(180deg,#f3cf90 0%,#d79a5a 28%,#6d4a2b 62%,var(--choc) 100%)}
-.sun{position:absolute;left:62%;top:14%;width:34vmax;height:34vmax;transform:translate(-50%,-30%);border-radius:50%;background:radial-gradient(circle,rgba(255,240,200,.95),rgba(255,214,140,.35) 40%,transparent 68%)}
-.layer{position:absolute;left:0;width:100%;bottom:0}.layer svg{display:block;width:100%;height:100%}
-.l1{height:62%;opacity:.55}.l2{height:50%;opacity:.8}.l3{height:36%}
-.mist{position:absolute;left:-20%;width:140%;height:34%;background:radial-gradient(ellipse at center,rgba(255,248,233,.38),transparent 65%);filter:blur(24px);animation:drift 22s ease-in-out infinite alternate}
-.mist.b{bottom:6%;animation-duration:30s;animation-direction:alternate-reverse;opacity:.7}.mist.a{bottom:22%}
+
+.burger{
+display:none;background:none;border:0;
+color:inherit;padding:8px;cursor:pointer
+}
+
+.burger .ico{width:28px;height:28px}
+
+@media(max-width:860px){
+.burger{display:block}
+.links{
+position:absolute;left:0;right:0;top:100%;
+background:rgba(27,15,9,.97);
+flex-direction:column;align-items:stretch;
+gap:0;padding:6px 22px 22px;display:none
+}
+.links.open{display:flex}
+.links a:not(.btn){padding:15px 0;border-bottom:1px solid var(--line)}
+.links .btn{margin-top:16px}
+}
+
+/* HERO SECTION */
+
+.hero{
+position:relative;
+min-height:100svh;
+overflow:hidden;
+display:flex;
+align-items:center;
+background:
+linear-gradient(180deg,rgba(20,12,7,.25),rgba(27,15,9,.8)),
+url("./assets/idukki-hero.jpg") center/cover no-repeat,
+linear-gradient(180deg,#f3cf90 0%,#d79a5a 28%,#6d4a2b 62%,var(--choc) 100%)
+}
+
+.sun{
+position:absolute;left:62%;top:14%;
+width:34vmax;height:34vmax;
+transform:translate(-50%,-30%);
+border-radius:50%;
+background:radial-gradient(circle,rgba(255,240,200,.65),rgba(255,214,140,.2) 40%,transparent 68%)
+}
+
+.layer{position:absolute;left:0;width:100%;bottom:0}
+.layer svg{display:block;width:100%;height:100%}
+.l1{height:62%;opacity:.55}
+.l2{height:50%;opacity:.8}
+.l3{height:36%}
+
+.mist{
+position:absolute;left:-20%;width:140%;height:34%;
+background:radial-gradient(ellipse at center,rgba(255,248,233,.38),transparent 65%);
+filter:blur(24px);
+animation:drift 22s ease-in-out infinite alternate
+}
+
+.mist.b{bottom:6%;animation-duration:30s;animation-direction:alternate-reverse;opacity:.7}
+.mist.a{bottom:22%}
+
 @keyframes drift{to{transform:translateX(12%)}}
-.pt{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.6;animation:fl linear infinite}
-@keyframes fl{from{transform:translateY(0);opacity:0}15%{opacity:.7}to{transform:translateY(-70vh) translateX(30px);opacity:0}}
-.hero .wrap{position:relative;z-index:3;padding-top:120px;padding-bottom:140px}
-.hero h1{font-size:clamp(46px,9vw,120px);max-width:11ch;text-shadow:0 4px 40px rgba(27,15,9,.5)}
-.hero h1 span{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}.hero h1 i{display:inline-block;font-style:italic;color:#ffe3a1}
+
+.pt{
+position:absolute;width:4px;height:4px;
+border-radius:50%;background:var(--gold);
+opacity:.6;animation:fl linear infinite
+}
+
+@keyframes fl{
+from{transform:translateY(0);opacity:0}
+15%{opacity:.7}
+to{transform:translateY(-70vh) translateX(30px);opacity:0}
+}
+
+.hero .wrap{
+position:relative;z-index:3;
+padding-top:120px;padding-bottom:140px
+}
+
+.hero h1{
+font-size:clamp(46px,9vw,120px);
+max-width:11ch;
+text-shadow:0 4px 40px rgba(27,15,9,.5)
+}
+
+.hero h1 span{
+display:inline-block;overflow:hidden;
+vertical-align:top;padding-bottom:.08em
+}
+
+.hero h1 i{display:inline-block;font-style:italic;color:#ffe3a1}
 .hero p{max-width:44ch;font-size:19px;margin:22px 0 34px;text-shadow:0 2px 16px rgba(27,15,9,.7)}
 .tg{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:20px;color:var(--gold);margin-bottom:14px}
-.scene{position:relative;min-height:105vh;overflow:hidden;display:flex;align-items:center;border-top:1px solid var(--line)}
-.scene.s1{background:radial-gradient(circle at 70% 40%,#1e3a1c,var(--choc) 70%)}
-.scene.s2{background:radial-gradient(circle at 30% 50%,#2b2220,#120b07 72%)}
-.scene.s3{background:radial-gradient(circle at 70% 45%,#5a3418,var(--choc) 70%)}
-.fall{position:absolute;inset:0;pointer-events:none}.fall svg{position:absolute;top:0;filter:drop-shadow(0 12px 14px rgba(0,0,0,.45))}
+
+/* PRODUCT FEATURE SECTIONS */
+
+.scene{
+position:relative;min-height:105vh;
+overflow:hidden;display:flex;align-items:center;
+border-top:1px solid var(--line)
+}
+
+.scene.s1{
+background:
+linear-gradient(90deg,rgba(12,24,13,.94) 0%,rgba(12,24,13,.72) 48%,rgba(12,24,13,.28) 100%),
+url("./assets/cardomonImg1.jpg") center/cover no-repeat
+}
+
+.scene.s2{
+background:
+linear-gradient(90deg,rgba(18,10,7,.28) 0%,rgba(18,10,7,.72) 48%,rgba(18,10,7,.94) 100%),
+url("./assets/blackPepperimg1.jpg") center/cover no-repeat
+}
+
+.scene.s3{
+background:
+linear-gradient(90deg,rgba(27,15,9,.94) 0%,rgba(27,15,9,.72) 48%,rgba(27,15,9,.28) 100%),
+url("./assets/coffiePowderP1.jpg") center/cover no-repeat
+}
+
+.fall{position:absolute;inset:0;pointer-events:none}
+.fall svg{position:absolute;top:0;filter:drop-shadow(0 12px 14px rgba(0,0,0,.45))}
+
 .scene .wrap{position:relative;z-index:2;width:100%}
+
+.scene:after{
+content:"";position:absolute;inset:0;
+background:linear-gradient(0deg,rgba(27,15,9,.42),transparent 55%);
+pointer-events:none
+}
+
 .scene h2{font-size:clamp(44px,8vw,104px);max-width:9ch}
 .scene p{max-width:38ch;color:var(--muted);font-size:18px;margin:18px 0 26px}
-.scene.r .wrap{text-align:right;display:flex;flex-direction:column;align-items:flex-end}
+
+.scene.r .wrap{
+text-align:right;display:flex;
+flex-direction:column;align-items:flex-end
+}
+
+/* PRODUCT COLLECTION */
+
 section.pad{padding:110px 0}
-.head{max-width:640px;margin-bottom:54px}.head h2{font-size:clamp(38px,6vw,68px)}.head p{color:var(--muted);margin:14px 0 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:28px}
-.card{background:var(--choc2);border:1px solid var(--line);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;transition:transform .4s,border-color .4s,box-shadow .4s}
-.card:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 26px 50px rgba(0,0,0,.5)}
-.pic{aspect-ratio:4/5;overflow:hidden;cursor:pointer}.pic img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .9s cubic-bezier(.2,.7,.2,1)}.card:hover .pic img{transform:scale(1.07)}
-.cb{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}.cb h3{font-size:30px}.cb p{margin:0;color:var(--muted);font-size:15px}
-.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:12px}.acts .btn{flex:1;padding:12px 14px;font-size:14px;white-space:nowrap}
+.head{max-width:640px;margin-bottom:54px}
+.head h2{font-size:clamp(38px,6vw,68px)}
+.head p{color:var(--muted);margin:14px 0 0}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+gap:28px
+}
+
+.card{
+background:var(--choc2);
+border:1px solid var(--line);
+border-radius:26px;
+overflow:hidden;
+display:flex;flex-direction:column;
+transition:transform .4s,border-color .4s,box-shadow .4s
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:var(--gold);
+box-shadow:0 26px 50px rgba(0,0,0,.5)
+}
+
+.pic{aspect-ratio:4/5;overflow:hidden;cursor:pointer}
+.pic img{
+width:100%;height:100%;object-fit:cover;
+display:block;transition:transform .9s cubic-bezier(.2,.7,.2,1)
+}
+
+.card:hover .pic img{transform:scale(1.07)}
+.cb{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cb h3{font-size:30px}
+.cb p{margin:0;color:var(--muted);font-size:15px}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:12px}
+.acts .btn{flex:1;padding:12px 14px;font-size:14px;white-space:nowrap}
+
+/* OUR STORY */
+
 .origin{background:linear-gradient(180deg,var(--choc),var(--green) 120%)}
 .steps{display:grid;gap:70px}
-.step{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.step:nth-child(even) .st{order:2}
-.step .im{aspect-ratio:4/3;border-radius:28px;overflow:hidden;border:1px solid var(--line)}.step img{width:100%;height:120%;object-fit:cover;display:block}
-.step h3{font-size:clamp(30px,4vw,46px);margin-bottom:12px}.step p{color:var(--muted);max-width:42ch;margin:0}
-.otitle{font-size:clamp(40px,7vw,86px);max-width:12ch;margin-bottom:26px}.oin{max-width:56ch;font-size:19px;color:var(--cream);margin:0 0 70px}
-@media(max-width:820px){.step{grid-template-columns:1fr;gap:22px}.step:nth-child(even) .st{order:0}section.pad{padding:80px 0}.scene.r .wrap{text-align:left;align-items:flex-start}}
-.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
-.feat{border:1px solid var(--line);border-radius:22px;padding:28px 24px;background:rgba(255,248,233,.03)}
-.feat .ic{color:var(--gold);margin-bottom:18px}.feat .ico{width:34px;height:34px}.feat h3{font-size:24px;margin-bottom:8px}.feat p{margin:0;color:var(--muted);font-size:15px}
-.cta{text-align:center;padding:110px 0;background:radial-gradient(circle at 50% 0,#3b2416,var(--choc) 70%)}
-.cta h2{font-size:clamp(38px,6vw,72px);max-width:14ch;margin:0 auto 14px}.cta p{color:var(--muted);margin:0 0 30px}
-footer{background:#120a06;padding:60px 0 26px;border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.step:nth-child(even) .st{order:2}
+.step .im{aspect-ratio:4/3;border-radius:28px;overflow:hidden;border:1px solid var(--line)}
+.step img{width:100%;height:120%;object-fit:cover;display:block}
+.step h3{font-size:clamp(30px,4vw,46px);margin-bottom:12px}
+.step p{color:var(--muted);max-width:42ch;margin:0}
+.otitle{font-size:clamp(40px,7vw,86px);max-width:12ch;margin-bottom:26px}
+.oin{max-width:56ch;font-size:19px;color:var(--cream);margin:0 0 70px}
+
+@media(max-width:820px){
+.step{grid-template-columns:1fr;gap:22px}
+.step:nth-child(even) .st{order:0}
+section.pad{padding:80px 0}
+.scene.r .wrap{text-align:left;align-items:flex-start}
+}
+
+/* FEATURES */
+
+.feats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:18px
+}
+
+.feat{
+border:1px solid var(--line);
+border-radius:22px;padding:28px 24px;
+background:rgba(255,248,233,.03)
+}
+
+.feat .ic{color:var(--gold);margin-bottom:18px}
+.feat .ico{width:34px;height:34px}
+.feat h3{font-size:24px;margin-bottom:8px}
+.feat p{margin:0;color:var(--muted);font-size:15px}
+
+/* CONTACT */
+
+.cta{
+text-align:center;padding:110px 0;
+background:radial-gradient(circle at 50% 0,#3b2416,var(--choc) 70%)
+}
+
+.cta h2{font-size:clamp(38px,6vw,72px);max-width:14ch;margin:0 auto 14px}
+.cta p{color:var(--muted);margin:0 0 30px}
+
+/* FOOTER */
+
+footer{
+background:#120a06;padding:60px 0 26px;
+border-top:1px solid var(--line)
+}
+
 .fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px}
 footer h4{margin:0 0 12px;font:600 13px Inter;color:var(--gold);letter-spacing:.06em}
-footer a,footer li{color:var(--muted);text-decoration:none;font-size:15px}footer a:hover{color:var(--gold)}
+footer a,footer li{color:var(--muted);text-decoration:none;font-size:15px}
+footer a:hover{color:var(--gold)}
 footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .cp{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+
 @media(max-width:820px){.fg{grid-template-columns:1fr 1fr}}
-.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;width:58px;height:58px;border-radius:50%;background:#1fa855;color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.5);transition:transform .2s}
-.fab:hover{transform:scale(1.1)}.fab svg{width:30px;height:30px;fill:currentColor}
-.soc{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}.sl{display:inline-flex;align-items:center;gap:12px;padding:8px 22px 8px 8px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--cream);font-weight:500;transition:border-color .25s,transform .25s}.sl:hover{border-color:var(--gold);transform:translateY(-2px)}.sl .lg{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff}.sl .lg svg{width:24px;height:24px}.lg.w{background:#1fa855}.lg.w svg{fill:currentColor}.lg.i{background:linear-gradient(45deg,#f58529,#dd2a7b 55%,#8134af)}.lg.i svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
-.dv{position:fixed;inset:0;z-index:100;background:var(--choc);overflow:auto;display:none;padding-top:env(safe-area-inset-top,0px)}
-.dv.show{display:block;animation:dvin .5s cubic-bezier(.2,.8,.2,1)}@keyframes dvin{from{opacity:0;transform:translateY(40px)}}
-.dvi{max-width:1200px;margin:0 auto;padding:20px 22px 60px;display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:start}
-.back{grid-column:1/-1;justify-self:start;background:none;border:1px solid var(--line);color:var(--cream);border-radius:999px;padding:10px 20px;cursor:pointer;font:500 14px Inter;display:flex;gap:8px;align-items:center}.back:hover{border-color:var(--gold);color:var(--gold)}
+
+.fab{
+position:fixed;right:18px;
+bottom:calc(18px + env(safe-area-inset-bottom,0px));
+z-index:55;width:58px;height:58px;
+border-radius:50%;background:#1fa855;color:#fff;
+display:grid;place-items:center;
+box-shadow:0 10px 28px rgba(0,0,0,.5);
+transition:transform .2s
+}
+
+.fab:hover{transform:scale(1.1)}
+.fab svg{width:30px;height:30px;fill:currentColor}
+
+/* PRODUCT DETAILS POPUP */
+
+.dv{
+position:fixed;inset:0;z-index:100;
+background:var(--choc);overflow:auto;
+display:none;padding-top:env(safe-area-inset-top,0px)
+}
+
+.dv.show{display:block;animation:dvin .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes dvin{from{opacity:0;transform:translateY(40px)}}
+
+.dvi{
+max-width:1200px;margin:0 auto;padding:20px 22px 60px;
+display:grid;grid-template-columns:1.05fr 1fr;
+gap:48px;align-items:start
+}
+
+.back{
+grid-column:1/-1;justify-self:start;
+background:none;border:1px solid var(--line);
+color:var(--cream);border-radius:999px;
+padding:10px 20px;cursor:pointer;
+font:500 14px Inter;display:flex;gap:8px;align-items:center
+}
+
+.back:hover{border-color:var(--gold);color:var(--gold)}
 .big{width:100%;aspect-ratio:1;object-fit:cover;border-radius:28px;display:block;border:1px solid var(--line)}
-.th{display:flex;gap:10px;margin-top:12px}.th button{width:68px;height:68px;border-radius:14px;border:2px solid transparent;padding:0;overflow:hidden;cursor:pointer;background:none}.th button.on{border-color:var(--gold)}.th img{width:100%;height:100%;object-fit:cover}
-.dvi h2{font-size:clamp(40px,6vw,70px);margin-bottom:14px}.dvi h4{margin:26px 0 10px;font:600 13px Inter;color:var(--gold);letter-spacing:.06em}
-.dvi ul{margin:0;padding-left:20px;color:var(--muted)}.dvi p{color:var(--muted);margin:0}
-.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:none;color:var(--cream);border-radius:999px;padding:8px 18px;font:500 14px Inter;cursor:pointer}.chip.on{background:var(--gold);color:#2a1810;border-color:var(--gold)}
+.th{display:flex;gap:10px;margin-top:12px}
+.th button{width:68px;height:68px;border-radius:14px;border:2px solid transparent;padding:0;overflow:hidden;cursor:pointer;background:none}
+.th button.on{border-color:var(--gold)}
+.th img{width:100%;height:100%;object-fit:cover}
+.dvi h2{font-size:clamp(40px,6vw,70px);margin-bottom:14px}
+.dvi h4{margin:26px 0 10px;font:600 13px Inter;color:var(--gold);letter-spacing:.06em}
+.dvi ul{margin:0;padding-left:20px;color:var(--muted)}
+.dvi p{color:var(--muted);margin:0}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:none;color:var(--cream);border-radius:999px;padding:8px 18px;font:500 14px Inter;cursor:pointer}
+.chip.on{background:var(--gold);color:#2a1810;border-color:var(--gold)}
+
 @media(max-width:820px){.dvi{grid-template-columns:1fr;gap:26px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+@media(prefers-reduced-motion:reduce){
+*{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
 </style>
 </head>
+
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><image id="podi" href="assets/pod-sprite.webp" x="-13" y="-28" width="26" height="56"/><image id="pep0" href="assets/peppercorn-1.webp" x="-18" y="-18" width="36" height="36"/><image id="pep1" href="assets/peppercorn-2.webp" x="-18" y="-18" width="36" height="36"/><image id="pep2" href="assets/peppercorn-3.webp" x="-18" y="-18" width="36" height="36"/></defs></svg>
-<header id="hd"><div class="wrap nav">
+
+<header id="hd">
+<div class="wrap nav">
 <a href="#home" class="logo" aria-label="MNL SPICES home">MNL <b>SPICES</b></a>
-<button class="burger" id="bg" aria-label="Open menu" aria-expanded="false" aria-controls="lk"><svg class="ico" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
-<nav class="links" id="lk" aria-label="Main"><a href="#home">Home</a><a href="#story">Our Story</a><a href="#products">Products</a><a href="#contact">Contact</a><a class="btn wa" data-wa target="_blank" rel="noopener">WhatsApp Enquiry</a></nav>
-</div></header>
+
+<button class="burger" id="bg" aria-label="Open menu" aria-expanded="false" aria-controls="lk">
+<svg class="ico" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+</button>
+
+<nav class="links" id="lk" aria-label="Main">
+<a href="#home">Home</a>
+<a href="#story">Our Story</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+<a class="btn wa" data-wa target="_blank" rel="noopener">WhatsApp Enquiry</a>
+</nav>
+</div>
+</header>
+
 <main>
+
 <section class="hero" id="home">
 <div class="sun"></div>
-<div class="layer l1" data-s="14"><svg viewBox="0 0 1440 400" preserveAspectRatio="none"><path fill="#8a6a45" d="M0 400V190l130-70 150 80 170-110 190 100 160-90 210 120 170-80 260 90v170z"/></svg></div>
+
+<div class="layer l1" data-s="14">
+<svg viewBox="0 0 1440 400" preserveAspectRatio="none">
+<path fill="#8a6a45" d="M0 400V190l130-70 150 80 170-110 190 100 160-90 210 120 170-80 260 90v170z"/>
+</svg>
+</div>
+
 <div class="mist a"></div>
-<div class="layer l2" data-s="8"><svg viewBox="0 0 1440 400" preserveAspectRatio="none"><path fill="#3f5a2e" d="M0 400V170c120-60 210 20 330-30s220-40 330 20 230 10 340-40 280 20 440-10v300z"/></svg></div>
+
+<div class="layer l2" data-s="8">
+<svg viewBox="0 0 1440 400" preserveAspectRatio="none">
+<path fill="#3f5a2e" d="M0 400V170c120-60 210 20 330-30s220-40 330 20 230 10 340-40 280 20 440-10v300z"/>
+</svg>
+</div>
+
 <div class="mist b"></div>
-<div class="layer l3" data-s="3"><svg viewBox="0 0 1440 300" preserveAspectRatio="none"><path fill="#14281a" d="M0 300V120c140-50 260 30 400-10s260-50 420 10 300-20 620-20v220z"/></svg></div>
-<div class="wrap"><div class="tg">From the Hills of Idukki to Your Home.</div>
-<h1 id="h1"><span>Nature’s</span> <span><i>Finest.</i></span> <span>Idukki’s</span> <span>Pride.</span></h1>
-<p>Discover the authentic taste of Kerala’s finest spices.</p><a href="#products" class="btn gold">Explore Collection</a></div></section>
-<section class="scene s1" data-k="cardamom"><div class="fall"></div><div class="wrap"><h2>Green Cardamom</h2><p>Fragrant pods from the hills, ready to lift your chai, sweets and curries.</p><a href="#products" class="btn ghost">See the collection</a></div></section>
-<section class="scene s2 r" data-k="pepper"><div class="fall"></div><div class="wrap"><h2>Black Pepper</h2><p>Bold, warm and pungent, the spice that gives every dish its edge.</p><a href="#products" class="btn ghost">See the collection</a></div></section>
-<section class="scene s3" data-k="coffee"><div class="fall"></div><div class="wrap"><h2>Coffee Powder</h2><p>A rich, aromatic cup, brewed the way Kerala likes it.</p><a href="#products" class="btn ghost">See the collection</a></div></section>
-<section class="pad" id="products"><div class="wrap"><div class="head"><h2>Our Collection</h2><p>Open any product for details, then message us on WhatsApp for prices and availability.</p></div><div class="grid" id="grid"></div></div></section>
-<section class="pad origin" id="story"><div class="wrap"><h2 class="otitle">From the Hills of Idukki.</h2>
-<p class="oin">Nestled in the beautiful hills of Idukki, our spices represent the natural richness, aroma and authentic flavours of Kerala. Every product brings a little piece of our land to your kitchen.</p><div class="steps" id="steps"></div></div></section>
-<section class="pad"><div class="wrap"><div class="head"><h2>Why choose MNL SPICES?</h2></div><div class="feats" id="feats"></div></div></section>
-<section class="cta" id="contact"><div class="wrap"><h2>Ask us about your next order.</h2><p>Chat with us directly for prices, quantities and delivery details.</p><a class="btn wa" data-wa target="_blank" rel="noopener">Enquire on WhatsApp</a>
-<div class="soc"><a class="sl" data-wa target="_blank" rel="noopener" aria-label="WhatsApp +91 9847266031"><span class="lg w"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.4-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.3z"/></svg></span>+91 98472 66031</a><a class="sl" href="https://instagram.com/mnl.spices" target="_blank" rel="noopener" aria-label="Instagram @mnl.spices"><span class="lg i"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></span>@mnl.spices</a></div></div></section>
+
+<div class="layer l3" data-s="3">
+<svg viewBox="0 0 1440 300" preserveAspectRatio="none">
+<path fill="#14281a" d="M0 300V120c140-50 260 30 400-10s260-50 420 10 300-20 620-20v220z"/>
+</svg>
+</div>
+
+<div class="wrap">
+<div class="tg">From the Hills of Idukki to Your Home.</div>
+<h1 id="h1">
+<span>Nature’s</span>
+<span><i>Finest.</i></span>
+<span>Idukki’s</span>
+<span>Pride.</span>
+</h1>
+<p>Discover the authentic taste of Kerala’s finest spices.</p>
+<a href="#products" class="btn gold">Explore Collection</a>
+</div>
+</section>
+
+<section class="scene s1" data-k="cardamom">
+<div class="fall"></div>
+<div class="wrap">
+<h2>Green Cardamom</h2>
+<p>Fragrant pods from the hills, ready to lift your chai, sweets and curries.</p>
+<a href="#products" class="btn ghost">See the collection</a>
+</div>
+</section>
+
+<section class="scene s2 r" data-k="pepper">
+<div class="fall"></div>
+<div class="wrap">
+<h2>Black Pepper</h2>
+<p>Bold, warm and pungent, the spice that gives every dish its edge.</p>
+<a href="#products" class="btn ghost">See the collection</a>
+</div>
+</section>
+
+<section class="scene s3" data-k="coffee">
+<div class="fall"></div>
+<div class="wrap">
+<h2>Coffee Powder</h2>
+<p>A rich, aromatic cup, brewed the way Kerala likes it.</p>
+<a href="#products" class="btn ghost">See the collection</a>
+</div>
+</section>
+
+<section class="pad" id="products">
+<div class="wrap">
+<div class="head">
+<h2>Our Collection</h2>
+<p>Open any product for details, then message us on WhatsApp for prices and availability.</p>
+</div>
+<div class="grid" id="grid"></div>
+</div>
+</section>
+
+<section class="pad origin" id="story">
+<div class="wrap">
+<h2 class="otitle">From the Hills of Idukki.</h2>
+<p class="oin">Nestled in the beautiful hills of Idukki, our spices represent the natural richness, aroma and authentic flavours of Kerala. Every product brings a little piece of our land to your kitchen.</p>
+<div class="steps" id="steps"></div>
+</div>
+</section>
+
+<section class="pad">
+<div class="wrap">
+<div class="head"><h2>Why choose MNL SPICES?</h2></div>
+<div class="feats" id="feats"></div>
+</div>
+</section>
+
+<section class="cta" id="contact">
+<div class="wrap">
+<h2>Ask us about your next order.</h2>
+<p>Chat with us directly for prices, quantities and delivery details.</p>
+<a class="btn wa" data-wa target="_blank" rel="noopener">Enquire on WhatsApp</a>
+</div>
+</section>
+
 </main>
-<footer><div class="wrap"><div class="fg">
-<div><a href="#home" class="logo">MNL <b>SPICES</b></a><p style="color:var(--muted);margin:10px 0 0">From the Hills of Idukki to Your Home.</p></div>
-<div><h4>Explore</h4><ul><li><a href="#home">Home</a></li><li><a href="#story">Our Story</a></li><li><a href="#products">Products</a></li><li><a href="#contact">Contact</a></li></ul></div>
-<div><h4>Products</h4><ul id="fp"></ul></div>
-<div><h4>Connect</h4><ul><li><a data-wa target="_blank" rel="noopener">WhatsApp: +91 9847266031</a></li><li><a href="https://instagram.com/mnl.spices" target="_blank" rel="noopener">Instagram @mnl.spices</a></li><li><a href="https://www.facebook.com/search/top?q=Mnl%20Spices" target="_blank" rel="noopener">Facebook: Mnl Spices</a></li></ul></div>
-</div><div class="cp">© <span id="yr"></span> MNL SPICES. All rights reserved.</div></div></footer>
-<a class="fab" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.4-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.3z"/></svg></a>
-<div class="dv" id="dv" role="dialog" aria-modal="true" aria-labelledby="dt"><div class="dvi" id="dvi"></div></div>
+
+<footer>
+<div class="wrap">
+<div class="fg">
+
+<div>
+<a href="#home" class="logo">MNL <b>SPICES</b></a>
+<p style="color:var(--muted);margin:10px 0 0">From the Hills of Idukki to Your Home.</p>
+</div>
+
+<div>
+<h4>Explore</h4>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#story">Our Story</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+
+<div>
+<h4>Products</h4>
+<ul id="fp"></ul>
+</div>
+
+<div>
+<h4>Connect</h4>
+<ul>
+<li><a data-wa target="_blank" rel="noopener">WhatsApp: +91 9847266031</a></li>
+<li><a href="https://instagram.com/mnl.spices" target="_blank" rel="noopener">Instagram @mnl.spices</a></li>
+<li><a href="https://www.facebook.com/search/top?q=Mnl%20Spices" target="_blank" rel="noopener">Facebook: Mnl Spices</a></li>
+</ul>
+</div>
+
+</div>
+<div class="cp">© <span id="yr"></span> MNL SPICES. All rights reserved.</div>
+</div>
+</footer>
+
+<a class="fab" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 24 24">
+<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.4-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.3z"/>
+</svg>
+</a>
+
+<div class="dv" id="dv" role="dialog" aria-modal="true" aria-labelledby="dt">
+<div class="dvi" id="dvi"></div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
 <script>
-/* ===== EDIT HERE: contact + products =====
-   image/gallery: real photo paths or URLs (WebP recommended). Empty = painted artwork.
-   sizes: replace with your actual packing options. Add a product by adding an object. */
+/* PRODUCT DATA */
+
 const WA="919847266031";
+
 const PRODUCTS=[
-{id:"cardamom",kind:"cardamom",name:"Premium Green Cardamom",image:"assets/cardamom.webp",gallery:["assets/cardamom-2.webp","assets/cardamom-3.webp"],short:"Aromatic green cardamom from the Idukki hills.",
- description:"Green cardamom is one of the signature spices of Idukki. Its sweet, floral aroma suits tea, desserts, biryani and masalas.",
- highlights:["Grown in the hills of Idukki, Kerala","Natural aroma and flavour","For tea, sweets and savoury dishes"],sizes:["Small pack","Medium pack","Large pack"]},
-{id:"pepper",kind:"pepper",name:"Premium Black Pepper",image:"assets/pepper.webp",gallery:["assets/pepper-2.webp"],short:"Bold, pungent Kerala black pepper.",
- description:"Kerala black pepper brings heat and depth to curries, roasts, soups and marinades. Grind it fresh for the strongest aroma.",
- highlights:["Sourced from Kerala’s spice hills","Strong aroma and pungency","Use whole or freshly ground"],sizes:["Small pack","Medium pack","Large pack"]},
-{id:"coffee",kind:"coffee",name:"Authentic Coffee Powder",image:"",gallery:[],short:"Rich, aromatic coffee powder for a classic cup.",
- description:"A pure coffee powder for people who love a strong, aromatic cup. Brew it filter-style or any way you like.",
- highlights:["Pure coffee powder","Rich aroma","Ideal for filter coffee"],sizes:["Small pack","Medium pack","Large pack"]}
+{
+id:"cardamom",
+kind:"cardamom",
+name:"Premium Green Cardamom",
+image:"./assets/cardomonImg1.jpg",
+gallery:[],
+short:"Aromatic green cardamom from the Idukki hills.",
+description:"Green cardamom is one of the signature spices of Idukki. Its sweet, floral aroma suits tea, desserts, biryani and masalas.",
+highlights:[
+"Grown in the hills of Idukki, Kerala",
+"Natural aroma and flavour",
+"For tea, sweets and savoury dishes"
+],
+sizes:["Small pack","Medium pack","Large pack"]
+},
+
+{
+id:"pepper",
+kind:"pepper",
+name:"Premium Black Pepper",
+image:"./assets/blackPepperimg1.jpg",
+gallery:[],
+short:"Bold, pungent Kerala black pepper.",
+description:"Kerala black pepper brings heat and depth to curries, roasts, soups and marinades. Grind it fresh for the strongest aroma.",
+highlights:[
+"Sourced from Kerala’s spice hills",
+"Strong aroma and pungency",
+"Use whole or freshly ground"
+],
+sizes:["Small pack","Medium pack","Large pack"]
+},
+
+{
+id:"coffee",
+kind:"coffee",
+name:"Authentic Coffee Powder",
+image:"./assets/coffiePowderP1.jpg",
+gallery:[],
+short:"Rich, aromatic coffee powder for a classic cup.",
+description:"A pure coffee powder for people who love a strong, aromatic cup. Brew it filter-style or any way you like.",
+highlights:[
+"Pure coffee powder",
+"Rich aroma",
+"Ideal for filter coffee"
+],
+sizes:["Small pack","Medium pack","Large pack"]
+}
 ];
-const ORIGIN=[{t:"The hills",d:"Mist, rain and cool mountain air shape every spice that grows in Idukki.",c:["#f0c98a","#3f5a2e"],image:""},
-{t:"The plantations",d:"Cardamom and pepper vines grow beneath the shade of tall forest trees.",c:["#9fc27a","#14281a"],image:""},
-{t:"The harvest",d:"Spices are gathered by hand, dried and prepared with traditional care.",c:["#d79a5a","#3b2416"],image:""}];
-const FEATURES=[["Authentic Kerala Spices","Rooted in the spice hills of Idukki.","M12 2l8 14H4zM12 22v-6"],["Carefully Selected Quality","Chosen with care before it reaches you.","M20 6L9 17l-5-5"],["Rich Natural Aroma","Spices that smell and taste like nature intended.","M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z"],["Premium Packaging","Presented as beautifully as the spice inside.","M21 8l-9-5-9 5v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"],["Direct Enquiry and Personal Support","Talk to us directly on WhatsApp.","M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"]];
-/* ===== end of editable data ===== */
-const $=s=>document.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+
+const ORIGIN=[
+{
+t:"The hills",
+d:"Mist, rain and cool mountain air shape every spice that grows in Idukki.",
+c:["#f0c98a","#3f5a2e"],
+image:""
+},
+{
+t:"The plantations",
+d:"Cardamom and pepper vines grow beneath the shade of tall forest trees.",
+c:["#9fc27a","#14281a"],
+image:""
+},
+{
+t:"The harvest",
+d:"Spices are gathered by hand, dried and prepared with traditional care.",
+c:["#d79a5a","#3b2416"],
+image:""
+}
+];
+
+const FEATURES=[
+["Authentic Kerala Spices","Rooted in the spice hills of Idukki.","M12 2l8 14H4zM12 22v-6"],
+["Carefully Selected Quality","Chosen with care before it reaches you.","M20 6L9 17l-5-5"],
+["Rich Natural Aroma","Spices that smell and taste like nature intended.","M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z"],
+["Premium Packaging","Presented as beautifully as the spice inside.","M21 8l-9-5-9 5v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"],
+["Direct Enquiry and Personal Support","Talk to us directly on WhatsApp.","M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"]
+];
+
+/* HELPER FUNCTIONS */
+
+const $=s=>document.querySelector(s);
+const $$=(s,r=document)=>[...r.querySelectorAll(s)];
+
 const wa=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+
 const msg=(p,s)=>`Hello MNL SPICES, I am interested in ${p.name}${s?` (${s})`:""}. Please share the price, available quantities and delivery details.`;
-const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const SH={cardamom:'<path d="M0-24C9-17 11-6 10 4C9 14 4 22 0 25C-4 22-9 14-10 4C-11-6-9-17 0-24z" fill="url(#cgr)"/><path d="M0-23C3-10 3 10 0 24M-5-19C-7-6-6 10-3 22M5-19C7-6 6 10 3 22M-8-12C-10 0-8 12-5 19M8-12C10 0 8 12 5 19" stroke="#2f5a1e" stroke-width=".7" opacity=".5" fill="none"/><path d="M-2-20C-4-8-4 8-2 20" stroke="#dff0b0" stroke-width=".9" opacity=".45" fill="none"/><path d="M-1.4-24l.4-3.5h2l.4 3.5z" fill="#a58f4f"/><path d="M0 25l-1.5 2h3z" fill="#8c7a42"/><ellipse cx="-4" cy="-5" rx="1.8" ry="9" fill="#fff" opacity=".2"/>',
-pepper:'<path d="M1-13C8-13 13-7 13 0S9 13 0 13-13 8-13 0-6-13 1-13z" fill="url(#ppr)"/><path d="M-10-3q4 3 8 0q4-3 9 1M-11 3q5 3 9 0q5-3 10 2M-6 9q4-2 8 0M-7-8q4 2 7 0" stroke="#000" stroke-width=".9" opacity=".55" fill="none"/><path d="M-9 0q4-2 8 1q4 2 8-1M-5 6q3-1 6 0" stroke="#8a7567" stroke-width=".6" opacity=".4" fill="none"/><circle cx="1" cy="-11.5" r="1.2" fill="#120c08"/><ellipse cx="-4.5" cy="-5.5" rx="3.2" ry="2" fill="#fff" opacity=".35" transform="rotate(-35 -4.5 -5.5)"/>',
-coffee:'<ellipse rx="14" ry="20" fill="#6b4529"/><path d="M0-19q-9 19 0 38" stroke="#24130a" stroke-width="3" fill="none"/><ellipse cx="-5" cy="-8" rx="3" ry="6" fill="#fff" opacity=".12"/>'};
-const DEFS=`<defs><linearGradient id="cgr" x1="0" x2="1"><stop offset="0" stop-color="#4a7a2e"/><stop offset=".38" stop-color="#a9d170"/><stop offset=".65" stop-color="#7fae4c"/><stop offset="1" stop-color="#3b6626"/></linearGradient><radialGradient id="ppr" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#6a5648"/><stop offset=".45" stop-color="#2c211a"/><stop offset="1" stop-color="#0e0906"/></radialGradient></defs>`;
-const svg=(k,r=0)=>`<svg viewBox="-30 -30 60 60" style="transform:rotate(${r}deg)">${k==="cardamom"?'<use href="#podi"/>':k==="pepper"?`<use href="#pep${Math.floor(Math.random()*3)}"/>`:SH[k]}</svg>`;
-const art=(k,bg)=>{let g="",x=7;for(let i=0;i<16;i++){x=(x*37+11)%97;g+=`<g transform="translate(${60+x*6.8} ${40+((x*7+i*61)%100)*5.2}) rotate(${(i*47)%180}) scale(${1.2+(i%3)*.5})">${SH[k]}</g>`}
-return "data:image/svg+xml;utf8,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 1000'><defs><radialGradient id='g' cx='.5' cy='.35' r='.9'><stop offset='0' stop-color='${bg}'/><stop offset='1' stop-color='#140a05'/></radialGradient></defs>${DEFS}<rect width='800' height='1000' fill='url(#g)'/>${g}</svg>`)};
-const BG={cardamom:"#2f5a2a",pepper:"#3a2c26",coffee:"#6a3f1c"};
+
+const esc=s=>s.replace(/[&<>"]/g,c=>({
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;"
+}[c]));
+
+const SH={
+cardamom:'<ellipse rx="9" ry="23" fill="#8db563"/><path d="M0-23v46M-4.5-19q-3 19 0 38M4.5-19q3 19 0 38" stroke="#4f7a38" stroke-width="1.2" fill="none"/>',
+
+pepper:'<circle r="13" fill="#1a120d"/><circle cx="-4" cy="-4" r="4.5" fill="#fff" opacity=".2"/><path d="M-7 5q5 5 10-1" stroke="#000" opacity=".4" fill="none"/>',
+
+coffee:'<ellipse rx="14" ry="20" fill="#6b4529"/><path d="M0-19q-9 19 0 38" stroke="#24130a" stroke-width="3" fill="none"/><ellipse cx="-5" cy="-8" rx="3" ry="6" fill="#fff" opacity=".12"/>'
+};
+
+const svg=(k,r=0)=>`<svg viewBox="-30 -30 60 60" style="transform:rotate(${r}deg)">${SH[k]}</svg>`;
+
+const art=(k,bg)=>{
+let g="",x=7;
+for(let i=0;i<16;i++){
+x=(x*37+11)%97;
+g+=`<g transform="translate(${60+x*6.8} ${40+((x*7+i*61)%100)*5.2}) rotate(${(i*47)%180}) scale(${1.2+(i%3)*.5})">${SH[k]}</g>`
+}
+return "data:image/svg+xml;utf8,"+encodeURIComponent(
+`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 1000'><defs><radialGradient id='g' cx='.5' cy='.35' r='.9'><stop offset='0' stop-color='${bg}'/><stop offset='1' stop-color='#140a05'/></radialGradient></defs><rect width='800' height='1000' fill='url(#g)'/>${g}</svg>`
+)
+};
+
+const BG={
+cardamom:"#2f5a2a",
+pepper:"#3a2c26",
+coffee:"#6a3f1c"
+};
+
 const pimg=(p,i=0)=>(i?p.gallery[i-1]:p.image)||art(p.kind,BG[p.kind]);
-const land=c=>"data:image/svg+xml;utf8,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 700' preserveAspectRatio='xMidYMid slice'><defs><linearGradient id='s' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='${c[0]}'/><stop offset='1' stop-color='${c[1]}'/></linearGradient></defs><rect width='800' height='700' fill='url(#s)'/><path d='M0 700V380l140-90 160 80 150-120 170 100 180-70v420z' fill='#14281a' opacity='.55'/><path d='M0 700V480c120-50 220 20 340-20s220-40 460 10v230z' fill='#0d1d12'/></svg>`);
-$$("[data-wa]").forEach(a=>a.href=wa("Hello MNL SPICES, I would like to enquire about your spices. Please share the price, available quantities and delivery details."));
+
+const land=c=>"data:image/svg+xml;utf8,"+encodeURIComponent(
+`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 700' preserveAspectRatio='xMidYMid slice'><defs><linearGradient id='s' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='${c[0]}'/><stop offset='1' stop-color='${c[1]}'/></linearGradient></defs><rect width='800' height='700' fill='url(#s)'/><path d='M0 700V380l140-90 160 80 150-120 170 100 180-70v420z' fill='#14281a' opacity='.55'/><path d='M0 700V480c120-50 220 20 340-20s220-40 460 10v230z' fill='#0d1d12'/></svg>`
+);
+
+/* WHATSAPP LINKS */
+
+$$("[data-wa]").forEach(a=>{
+a.href=wa("Hello MNL SPICES, I would like to enquire about your spices. Please share the price, available quantities and delivery details.")
+});
+
 $("#yr").textContent=new Date().getFullYear();
-$("#fp").innerHTML=PRODUCTS.map(p=>`<li><a href="#" data-open="${p.id}">${esc(p.name)}</a></li>`).join("");
-const card=p=>`<article class="card"><div class="pic" data-open="${p.id}"><img loading="lazy" src="${pimg(p)}" alt="${esc(p.name)}"></div><div class="cb"><h3>${esc(p.name)}</h3><p>${esc(p.short)}</p><div class="acts"><button class="btn ghost" data-open="${p.id}">View Details</button><a class="btn wa" href="${wa(msg(p))}" target="_blank" rel="noopener">Enquire on WhatsApp</a></div></div></article>`;
+
+$("#fp").innerHTML=PRODUCTS.map(p=>
+`<li><a href="#" data-open="${p.id}">${esc(p.name)}</a></li>`
+).join("");
+
+/* PRODUCT CARDS */
+
+const card=p=>`
+<article class="card">
+<div class="pic" data-open="${p.id}">
+<img loading="lazy" src="${pimg(p)}" alt="${esc(p.name)}">
+</div>
+<div class="cb">
+<h3>${esc(p.name)}</h3>
+<p>${esc(p.short)}</p>
+<div class="acts">
+<button class="btn ghost" data-open="${p.id}">View Details</button>
+<a class="btn wa" href="${wa(msg(p))}" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+</div>
+</div>
+</article>
+`;
+
 $("#grid").innerHTML=PRODUCTS.map(card).join("");
-$("#steps").innerHTML=ORIGIN.map(o=>`<div class="step"><div class="st"><h3>${o.t}</h3><p>${o.d}</p></div><div class="im"><img loading="lazy" src="${o.image||land(o.c)}" alt="${o.t}"></div></div>`).join("");
-$("#feats").innerHTML=FEATURES.map(f=>`<div class="feat"><div class="ic"><svg class="ico" viewBox="0 0 24 24"><path d="${f[2]}"/></svg></div><h3>${f[0]}</h3><p>${f[1]}</p></div>`).join("");
-[["s1","cardamom",.72,.88],["s2","pepper",.8,.9]].forEach(([c,id,a,b])=>{const p=PRODUCTS.find(x=>x.id===id);if(p&&p.image)$("."+c).style.background=`linear-gradient(rgba(27,15,9,${a}),rgba(27,15,9,${b})),url("${p.image}") center/cover`});
-const hero=$(".hero");for(let i=0;i<26;i++){const s=document.createElement("span");s.className="pt";s.style.cssText=`left:${Math.random()*100}%;bottom:${Math.random()*30}%;animation-duration:${9+Math.random()*12}s;animation-delay:-${Math.random()*14}s;width:${2+Math.random()*3}px;height:${2+Math.random()*3}px`;hero.append(s)}
-const hd=$("#hd"),sc=()=>hd.classList.toggle("sm",scrollY>40);addEventListener("scroll",sc,{passive:true});sc();
-const bg=$("#bg"),lk=$("#lk");bg.onclick=()=>{const o=lk.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
-lk.onclick=e=>{if(e.target.closest("a")){lk.classList.remove("open");bg.setAttribute("aria-expanded","false")}};
+
+/* OUR STORY */
+
+$("#steps").innerHTML=ORIGIN.map(o=>`
+<div class="step">
+<div class="st">
+<h3>${o.t}</h3>
+<p>${o.d}</p>
+</div>
+<div class="im">
+<img loading="lazy" src="${o.image||land(o.c)}" alt="${o.t}">
+</div>
+</div>
+`).join("");
+
+/* FEATURES */
+
+$("#feats").innerHTML=FEATURES.map(f=>`
+<div class="feat">
+<div class="ic">
+<svg class="ico" viewBox="0 0 24 24">
+<path d="${f[2]}"/>
+</svg>
+</div>
+<h3>${f[0]}</h3>
+<p>${f[1]}</p>
+</div>
+`).join("");
+
+/* FLOATING PARTICLES */
+
+const hero=$(".hero");
+
+for(let i=0;i<26;i++){
+const s=document.createElement("span");
+s.className="pt";
+s.style.cssText=`left:${Math.random()*100}%;bottom:${Math.random()*30}%;animation-duration:${9+Math.random()*12}s;animation-delay:-${Math.random()*14}s;width:${2+Math.random()*3}px;height:${2+Math.random()*3}px`;
+hero.append(s);
+}
+
+/* NAVIGATION */
+
+const hd=$("#hd");
+const sc=()=>hd.classList.toggle("sm",scrollY>40);
+
+addEventListener("scroll",sc,{passive:true});
+sc();
+
+const bg=$("#bg");
+const lk=$("#lk");
+
+bg.onclick=()=>{
+const o=lk.classList.toggle("open");
+bg.setAttribute("aria-expanded",o);
+};
+
+lk.onclick=e=>{
+if(e.target.closest("a")){
+lk.classList.remove("open");
+bg.setAttribute("aria-expanded","false");
+}
+};
+
+/* PRODUCT DETAIL POPUP */
+
 let last=null;
-function openP(id){const p=PRODUCTS.find(x=>x.id===id);if(!p)return;let size=p.sizes.length===1?p.sizes[0]:"",cur=0;const n=p.gallery.length+1;last=document.activeElement;
-const draw=()=>{$("#dvi").innerHTML=`<button class="back" id="bk"><svg class="ico" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>Back to collection</button>
-<div><img class="big" src="${pimg(p,cur)}" alt="${esc(p.name)}">${n>1?`<div class="th">${Array.from({length:n},(_,i)=>`<button class="${i===cur?"on":""}" data-t="${i}" aria-label="Image ${i+1}"><img src="${pimg(p,i)}" alt=""></button>`).join("")}</div>`:""}</div>
-<div><h2 id="dt">${esc(p.name)}</h2><p>${esc(p.description)}</p><h4>HIGHLIGHTS</h4><ul>${p.highlights.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>
-<h4>PACKING OPTIONS</h4><div class="chips">${p.sizes.map(s=>`<button class="chip ${s===size?"on":""}" data-z="${esc(s)}" aria-pressed="${s===size}">${esc(s)}</button>`).join("")}</div>
-<div style="margin-top:30px"><a class="btn wa" id="dw" href="${wa(msg(p,size))}" target="_blank" rel="noopener">Enquire on WhatsApp</a></div></div>`;
-$("#bk").onclick=closeP;$("#bk").focus();$$("[data-t]").forEach(b=>b.onclick=()=>{cur=+b.dataset.t;draw()});
-$$("[data-z]").forEach(b=>b.onclick=()=>{size=size===b.dataset.z?"":b.dataset.z;$$("[data-z]").forEach(o=>{const on=o.dataset.z===size;o.classList.toggle("on",on);o.setAttribute("aria-pressed",on)});$("#dw").href=wa(msg(p,size))})};
-draw();$("#dv").classList.add("show");$("#dv").scrollTop=0;document.body.style.overflow="hidden"}
-function closeP(){$("#dv").classList.remove("show");document.body.style.overflow="";last&&last.focus()}
-document.addEventListener("click",e=>{const o=e.target.closest("[data-open]");if(o){e.preventDefault();openP(o.dataset.open)}});
-document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("#dv").classList.contains("show"))closeP()});
-const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches,mob=innerWidth<700;
-$$(".scene").forEach(s=>{const k=s.dataset.k,box=s.querySelector(".fall"),N=mob?10:18;
-for(let i=0;i<N;i++){const d=document.createElement("div");d.innerHTML=svg(k,Math.random()*360);const el=d.firstChild,w=(mob?28:34)+Math.random()*(mob?30:46);
-el.style.width=w+"px";el.style.height=w+"px";el.style.left=Math.random()*96+"%";el.style.top=Math.random()*70+"%";el.style.filter=`blur(${w<46?1.2:0}px) drop-shadow(0 12px 14px rgba(0,0,0,.45))`;box.append(el)}});
-if(window.gsap&&window.ScrollTrigger&&!reduce){gsap.registerPlugin(ScrollTrigger);
-gsap.from("#h1 span",{yPercent:110,opacity:0,duration:1.2,stagger:.14,ease:"power4.out",delay:.2});
-gsap.from(".hero .tg,.hero p,.hero .btn",{y:24,opacity:0,duration:1,stagger:.18,delay:.9,ease:"power3.out"});
-$$(".layer").forEach(l=>gsap.to(l,{yPercent:+l.dataset.s*2.2,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}}));
-gsap.to(".sun",{y:160,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
-$$(".scene").forEach(s=>{const H=s.offsetHeight;$$(".fall svg",s).forEach(el=>{const sp=.5+Math.random()*.9;gsap.fromTo(el,{y:-H*.5,rotation:Math.random()*60},{y:H*(.6+sp*.5),rotation:"+="+(120+Math.random()*240),ease:"none",scrollTrigger:{trigger:s,start:"top bottom",end:"bottom top",scrub:.6+Math.random()}})});
-gsap.from($$("h2,p,.btn",s),{y:50,opacity:0,duration:1,stagger:.15,ease:"power3.out",scrollTrigger:{trigger:s,start:"top 55%",once:true}})});
-gsap.from(".card",{y:70,opacity:0,duration:1,stagger:.15,ease:"power3.out",scrollTrigger:{trigger:"#grid",start:"top 80%",once:true}});
-gsap.from(".otitle,.oin",{y:50,opacity:0,duration:1,stagger:.15,scrollTrigger:{trigger:".otitle",start:"top 85%",once:true}});
-$$(".step").forEach(s=>{gsap.from($(".st",s),{x:-40,opacity:0,duration:1,scrollTrigger:{trigger:s,start:"top 78%",once:true}});
-gsap.fromTo($("img",s),{yPercent:-8},{yPercent:8,ease:"none",scrollTrigger:{trigger:s,start:"top bottom",end:"bottom top",scrub:true}});
-gsap.from($(".im",s),{clipPath:"inset(0 0 100% 0)",duration:1.3,ease:"power4.out",scrollTrigger:{trigger:s,start:"top 78%",once:true}})});
-gsap.from(".feat",{y:40,opacity:0,duration:.9,stagger:.12,scrollTrigger:{trigger:"#feats",start:"top 85%",once:true}});
-gsap.from(".cta h2,.cta p,.cta .btn",{y:40,opacity:0,duration:1,stagger:.15,scrollTrigger:{trigger:".cta",start:"top 75%",once:true}})}
+
+function openP(id){
+
+const p=PRODUCTS.find(x=>x.id===id);
+if(!p)return;
+
+let size=p.sizes.length===1?p.sizes[0]:"";
+let cur=0;
+const n=p.gallery.length+1;
+
+last=document.activeElement;
+
+const draw=()=>{
+
+$("#dvi").innerHTML=`
+<button class="back" id="bk">
+<svg class="ico" viewBox="0 0 24 24">
+<path d="M19 12H5M12 5l-7 7 7 7"/>
+</svg>
+Back to collection
+</button>
+
+<div>
+<img class="big" src="${pimg(p,cur)}" alt="${esc(p.name)}">
+
+${n>1?`
+<div class="th">
+${Array.from({length:n},(_,i)=>`
+<button class="${i===cur?"on":""}" data-t="${i}" aria-label="Image ${i+1}">
+<img src="${pimg(p,i)}" alt="">
+</button>
+`).join("")}
+</div>
+`:""}
+</div>
+
+<div>
+<h2 id="dt">${esc(p.name)}</h2>
+<p>${esc(p.description)}</p>
+
+<h4>HIGHLIGHTS</h4>
+<ul>
+${p.highlights.map(h=>`<li>${esc(h)}</li>`).join("")}
+</ul>
+
+<h4>PACKING OPTIONS</h4>
+<div class="chips">
+${p.sizes.map(s=>`
+<button class="chip ${s===size?"on":""}" data-z="${esc(s)}" aria-pressed="${s===size}">
+${esc(s)}
+</button>
+`).join("")}
+</div>
+
+<div style="margin-top:30px">
+<a class="btn wa" id="dw" href="${wa(msg(p,size))}" target="_blank" rel="noopener">
+Enquire on WhatsApp
+</a>
+</div>
+</div>
+`;
+
+$("#bk").onclick=closeP;
+$("#bk").focus();
+
+$$("[data-t]").forEach(b=>b.onclick=()=>{
+cur=+b.dataset.t;
+draw();
+});
+
+$$("[data-z]").forEach(b=>b.onclick=()=>{
+size=size===b.dataset.z?"":b.dataset.z;
+
+$$("[data-z]").forEach(o=>{
+const on=o.dataset.z===size;
+o.classList.toggle("on",on);
+o.setAttribute("aria-pressed",on);
+});
+
+$("#dw").href=wa(msg(p,size));
+});
+
+};
+
+draw();
+$("#dv").classList.add("show");
+$("#dv").scrollTop=0;
+document.body.style.overflow="hidden";
+}
+
+function closeP(){
+$("#dv").classList.remove("show");
+document.body.style.overflow="";
+last&&last.focus();
+}
+
+document.addEventListener("click",e=>{
+const o=e.target.closest("[data-open]");
+if(o){
+e.preventDefault();
+openP(o.dataset.open);
+}
+});
+
+document.addEventListener("keydown",e=>{
+if(e.key==="Escape"&&$("#dv").classList.contains("show"))closeP();
+});
+
+/* ANIMATED PRODUCT ELEMENTS */
+
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+const mob=innerWidth<700;
+
+$$(".scene").forEach(s=>{
+const k=s.dataset.k;
+const box=s.querySelector(".fall");
+const N=mob?10:18;
+
+for(let i=0;i<N;i++){
+const d=document.createElement("div");
+d.innerHTML=svg(k,Math.random()*360);
+
+const el=d.firstChild;
+const w=(mob?28:34)+Math.random()*(mob?30:46);
+
+el.style.width=w+"px";
+el.style.height=w+"px";
+el.style.left=Math.random()*96+"%";
+el.style.top=Math.random()*70+"%";
+el.style.filter=`blur(${w<46?1.2:0}px) drop-shadow(0 12px 14px rgba(0,0,0,.45))`;
+
+box.append(el);
+}
+});
+
+/* GSAP SCROLL ANIMATIONS */
+
+if(window.gsap&&window.ScrollTrigger&&!reduce){
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from("#h1 span",{
+yPercent:110,
+opacity:0,
+duration:1.2,
+stagger:.14,
+ease:"power4.out",
+delay:.2
+});
+
+gsap.from(".hero .tg,.hero p,.hero .btn",{
+y:24,
+opacity:0,
+duration:1,
+stagger:.18,
+delay:.9,
+ease:"power3.out"
+});
+
+$$(".layer").forEach(l=>
+gsap.to(l,{
+yPercent:+l.dataset.s*2.2,
+ease:"none",
+scrollTrigger:{
+trigger:".hero",
+start:"top top",
+end:"bottom top",
+scrub:true
+}
+})
+);
+
+gsap.to(".sun",{
+y:160,
+ease:"none",
+scrollTrigger:{
+trigger:".hero",
+start:"top top",
+end:"bottom top",
+scrub:true
+}
+});
+
+$$(".scene").forEach(s=>{
+
+const H=s.offsetHeight;
+
+$$(".fall svg",s).forEach(el=>{
+
+const sp=.5+Math.random()*.9;
+
+gsap.fromTo(el,
+{y:-H*.5,rotation:Math.random()*60},
+{
+y:H*(.6+sp*.5),
+rotation:"+="+(120+Math.random()*240),
+ease:"none",
+scrollTrigger:{
+trigger:s,
+start:"top bottom",
+end:"bottom top",
+scrub:.6+Math.random()
+}
+}
+);
+
+});
+
+gsap.from($$("h2,p,.btn",s),{
+y:50,
+opacity:0,
+duration:1,
+stagger:.15,
+ease:"power3.out",
+scrollTrigger:{
+trigger:s,
+start:"top 55%",
+once:true
+}
+});
+
+});
+
+gsap.from(".card",{
+y:70,
+opacity:0,
+duration:1,
+stagger:.15,
+ease:"power3.out",
+scrollTrigger:{
+trigger:"#grid",
+start:"top 80%",
+once:true
+}
+});
+
+gsap.from(".otitle,.oin",{
+y:50,
+opacity:0,
+duration:1,
+stagger:.15,
+scrollTrigger:{
+trigger:".otitle",
+start:"top 85%",
+once:true
+}
+});
+
+$$(".step").forEach(s=>{
+
+gsap.from($(".st",s),{
+x:-40,
+opacity:0,
+duration:1,
+scrollTrigger:{
+trigger:s,
+start:"top 78%",
+once:true
+}
+});
+
+gsap.fromTo($("img",s),
+{yPercent:-8},
+{
+yPercent:8,
+ease:"none",
+scrollTrigger:{
+trigger:s,
+start:"top bottom",
+end:"bottom top",
+scrub:true
+}
+}
+);
+
+gsap.from($(".im",s),{
+clipPath:"inset(0 0 100% 0)",
+duration:1.3,
+ease:"power4.out",
+scrollTrigger:{
+trigger:s,
+start:"top 78%",
+once:true
+}
+});
+
+});
+
+gsap.from(".feat",{
+y:40,
+opacity:0,
+duration:.9,
+stagger:.12,
+scrollTrigger:{
+trigger:"#feats",
+start:"top 85%",
+once:true
+}
+});
+
+gsap.from(".cta h2,.cta p,.cta .btn",{
+y:40,
+opacity:0,
+duration:1,
+stagger:.15,
+scrollTrigger:{
+trigger:".cta",
+start:"top 75%",
+once:true
+}
+});
+
+}
 </script>
+
 </body>
 </html>
