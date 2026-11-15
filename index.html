@@ -122,7 +122,8 @@ section.pad{padding:110px 0}
 .step{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .step:nth-child(even) .st{order:2}
 .step .im{aspect-ratio:4/3;border-radius:28px;overflow:hidden;border:1px solid var(--line)}
-.step img{width:100%;height:120%;object-fit:cover;display:block}
+.step .st,.step .im{opacity:1;visibility:visible}
+.step img{width:100%;height:100%;object-fit:cover;display:block}
 .step h3{font-size:clamp(30px,4vw,46px);margin-bottom:12px}
 .step p{color:var(--muted);max-width:42ch;margin:0}
 .otitle{font-size:clamp(40px,7vw,86px);max-width:12ch;margin-bottom:26px}
@@ -325,9 +326,23 @@ gsap.from($$("h2,p,.btn",s),{y:50,opacity:0,clipPath:"inset(0 0 100% 0)",duratio
 gsap.from(".card",{y:80,opacity:0,scale:.94,duration:1,stagger:.15,ease:"power3.out",scrollTrigger:{trigger:"#grid",start:"top 80%",once:true}});
 gsap.from(".otitle,.oin",{y:50,opacity:0,duration:1,stagger:.15,scrollTrigger:{trigger:".otitle",start:"top 85%",once:true}});
 $$(".step").forEach(s=>{
-gsap.from($(".st",s),{x:-40,opacity:0,duration:1,scrollTrigger:{trigger:s,start:"top 78%",once:true}});
-gsap.fromTo($("img",s),{yPercent:-8},{yPercent:8,ease:"none",scrollTrigger:{trigger:s,start:"top bottom",end:"bottom top",scrub:true}});
-gsap.from($(".im",s),{clipPath:"inset(0 0 100% 0)",duration:1.3,ease:"power4.out",scrollTrigger:{trigger:s,start:"top 78%",once:true}})});
+  // Keep the story content visible even if ScrollTrigger fails to initialise.
+  gsap.fromTo($(".st",s),
+    {x:0,y:24,opacity:0},
+    {x:0,y:0,opacity:1,duration:.8,ease:"power3.out",
+     scrollTrigger:{trigger:s,start:"top 90%",once:true}}
+  );
+  gsap.fromTo($(".im",s),
+    {y:24,opacity:0},
+    {y:0,opacity:1,duration:1,ease:"power3.out",
+     scrollTrigger:{trigger:s,start:"top 90%",once:true}}
+  );
+  gsap.fromTo($("img",s),
+    {yPercent:-4},
+    {yPercent:4,ease:"none",
+     scrollTrigger:{trigger:s,start:"top bottom",end:"bottom top",scrub:true}}
+  );
+});
 gsap.from(".feat",{y:40,opacity:0,duration:.9,stagger:.12,scrollTrigger:{trigger:"#feats",start:"top 85%",once:true}});
 gsap.from(".cta h2,.cta p,.cta .btn",{y:40,opacity:0,duration:1,stagger:.15,scrollTrigger:{trigger:".cta",start:"top 75%",once:true}});
 }
