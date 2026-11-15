@@ -92,11 +92,6 @@ header.sm .nav{height:62px}
 .cue{position:absolute;left:50%;bottom:26px;z-index:4;width:26px;height:42px;margin-left:-13px;border:1.5px solid var(--cream);border-radius:20px;opacity:.7}
 .cue::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--gold);animation:cue 1.8s infinite}
 @keyframes cue{to{transform:translateY(14px);opacity:0}}
-.mq{overflow:hidden;background:var(--gold);color:#2a1810;padding:16px 0;border-block:1px solid #2a1810;transform:rotate(-1.2deg);margin:-18px -2% 0;position:relative;z-index:5}
-.mq div{display:flex;width:max-content;animation:mq 28s linear infinite}
-.mq span{font:italic 700 28px "Cormorant Garamond",serif;padding:0 26px;white-space:nowrap}
-.mq span::after{content:"✦";margin-left:52px;font-style:normal;font-size:18px}
-@keyframes mq{to{transform:translateX(-50%)}}
 .scene{position:relative;min-height:105vh;overflow:hidden;display:flex;align-items:center}
 .scene.s1{background:linear-gradient(90deg,rgba(12,24,13,.94) 0%,rgba(12,24,13,.72) 48%,rgba(12,24,13,.28) 100%),url("./assets/cardomonImg1.jpg") center/cover no-repeat}
 .scene.s2{background:linear-gradient(90deg,rgba(18,10,7,.28) 0%,rgba(18,10,7,.72) 48%,rgba(18,10,7,.94) 100%),url("./assets/blackPepperimg1.jpg") center/cover no-repeat}
@@ -201,7 +196,6 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 </div>
 <div class="cue" aria-hidden="true"></div>
 </section>
-<div class="mq" aria-hidden="true"><div id="mq"></div></div>
 <section class="scene s1" data-k="cardamom" aria-labelledby="t1"><div class="fall" aria-hidden="true"></div><div class="wrap"><h2 id="t1">Green Cardamom</h2><p>Fragrant pods from the hills, ready to lift your chai, sweets and curries.</p><a href="#products" class="btn ghost mag">See the collection</a></div></section>
 <section class="scene s2 r" data-k="pepper" aria-labelledby="t2"><div class="fall" aria-hidden="true"></div><div class="wrap"><h2 id="t2">Black Pepper</h2><p>Bold, warm and pungent, the spice that gives every dish its edge.</p><a href="#products" class="btn ghost mag">See the collection</a></div></section>
 <section class="scene s3" data-k="coffee" aria-labelledby="t3"><div class="fall" aria-hidden="true"></div><div class="wrap"><h2 id="t3">Coffee Powder</h2><p>A rich, aromatic cup, brewed the way Kerala likes it.</p><a href="#products" class="btn ghost mag">See the collection</a></div></section>
@@ -285,8 +279,6 @@ $("#fp").innerHTML=PRODUCTS.map(p=>`<li><a href="#" data-open="${p.id}">${esc(p.
 $("#grid").innerHTML=PRODUCTS.map(p=>`<article class="card"><div class="pic" data-open="${p.id}"><img loading="lazy" width="640" height="800" src="${pimg(p)}" alt="${esc(p.name)} from Idukki, Kerala by MNL SPICES"></div><div class="cb"><h3>${esc(p.name)}</h3><p>${esc(p.short)}</p><div class="acts"><button class="btn ghost" data-open="${p.id}">View Details</button><a class="btn wa" href="${wa(msg(p))}" target="_blank" rel="noopener">Enquire on WhatsApp</a></div></div></article>`).join("");
 $("#steps").innerHTML=ORIGIN.map(o=>`<div class="step"><div class="st"><h3>${o.t}</h3><p>${o.d}</p></div><div class="im"><img loading="lazy" src="${o.image||land(o.c)}" alt="${o.t} in Idukki, Kerala"></div></div>`).join("");
 $("#feats").innerHTML=FEATURES.map(f=>`<div class="feat"><div class="ic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="${f[2]}"/></svg></div><h3>${f[0]}</h3><p>${f[1]}</p></div>`).join("");
-const mqi=["Green Cardamom","Black Pepper","Coffee Powder","Idukki, Kerala","Direct on WhatsApp"].map(t=>`<span>${t}</span>`).join("");
-$("#mq").innerHTML=mqi+mqi+mqi+mqi;
 const hero=$(".hero");
 for(let i=0;i<26;i++){const s=document.createElement("span");s.className="pt";s.style.cssText=`left:${Math.random()*100}%;bottom:${Math.random()*30}%;animation-duration:${9+Math.random()*12}s;animation-delay:-${Math.random()*14}s;width:${2+Math.random()*3}px;height:${2+Math.random()*3}px`;hero.append(s)}
 const hd=$("#hd"),bar=$("#bar");
